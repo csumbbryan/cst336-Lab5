@@ -1,0 +1,76 @@
+#descriptor {
+  font-weight: bold;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+div.container {
+
+  width: 100% important;
+  margin: 0px;
+}
+
+div.header {
+  background-color: #353535;
+  color: #ffffff;
+  text-align: center;
+  padding: 8px;
+  width: 100% !important;
+  margin: 0px;
+}
+
+div.quoteEntry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+div.formEntry {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 4px;
+  display: flex;
+  text-align: center;
+}
+
+div.button {
+  margin: 4px;
+}
+
+div.hr {
+  width: 400px;
+  
+}
+
+div.footer {
+  width: 80%;
+}
+
+hr.footer {
+  border: solid 1px black;
+  width: 100%;
+  text-align: center;
+}
+
+hr.separator {
+  text-align: center;
+  border-top: 2px dotted #353535;
+}
+
+button {
+  border-radius: 4px !important;
+}
+
+footer {
+  text-align: center;
+}
+

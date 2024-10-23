@@ -1,0 +1,55 @@
+<%- include("partials/header.ejs") %>
+<body>
+
+
+ 
+  <div class="header"><h1> Quote Finder </h1></div>
+  <div class="container">
+   <div class="formEntry">
+   <form action="/searchByKeyword">
+     Keyword: 
+     <input type="text" name="keyword"><br>
+     <div class="button"><button>Search by Keyword</button></div>
+     <div class="hr"><hr class="separator"></div>
+   </form>
+   </div>
+  <div class="formEntry">
+  <form action="/searchByAuthor">
+     <select name="authorId">
+       <% for (author of authors) { %>
+         <option value="<%=author.authorId%>">
+           <%=author.firstName%> <%=author.lastName%>
+         </option>
+       <% } %>
+     </select><br>
+    <div class="button"><button>Search by Author</button></div>
+         <div class="hr"><hr class="separator"></div>
+  </form>
+  </div>
+  <div class="formEntry">
+  <form action="/searchByCategory">
+    <select name="category">
+      <% for (category of categories) { %>
+        <option value="<%=category.category%>">
+          <%=category.category%>
+        </option>
+      <% } %>
+    </select><br>
+    <div class="button"><button>Search by Category</button></div>
+        <div class="hr"><hr class="separator"></div>
+  </form>
+  </div>
+  <div class="formEntry">
+  <form action="/searchByLikes">
+    <input size="14" placeholder="Enter Low Range" name="lowLikes"></input>
+    <input size="14" placeholder="Enter High Range" name="highLikes"></input><br>
+    <div class="button"><button>Search by Likes</button></div>
+  </form>
+  </div>
+</div>
+
+  <%- include("partials/footer.ejs") %>
+
+</body>
+</html>
+
